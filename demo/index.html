@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>pilatch-card demo</title>
+  <script src="/node_modules/webcomponentsjsv0/webcomponents-lite.js"></script>
+  <script src="/node_modules/simple-component-v0/index.js"></script>
+  <link rel="import" href="/pilatch-card.html">
+  <link rel="stylesheet" type="text/css" href="/pilatch-card.css">
+  <style>
+  body {
+    background-color: #eee;
+  }
+  </style>
+</head>
+<body>
+  <h1><code>pilatch-card</code></h1>
+  <p><code>&lt;pilatch-card&gt;&lt;/pilatch-card&gt;</code></p>
+  <p><code>&lt;pilatch-card rank="5" suit="scissors" up clickable&gt;&lt;/pilatch-card&gt;</code></p>
+  <p><code>&lt;pilatch-card rank="13" suit="paper" clickable&gt;&lt;/pilatch-card&gt;</code></p>
+  <p><code>&lt;pilatch-card rank="12" suit="rock" up&gt;&lt;/pilatch-card&gt;</code></p>
+  <p><code>&lt;pilatch-card rank="14" suit="scissors" known&gt;&lt;/pilatch-card&gt;</code></p>
+  <p><code>&lt;pilatch-card rank=&quot;11&quot; suit=&quot;paper&quot; up clickable no-transition&gt;&lt;/pilatch-card&gt;</code></p>
+  <p><code>&lt;pilatch-card binary clickable&gt;&lt;/pilatch-card&gt;</code></p>
+  <pilatch-card></pilatch-card>
+  <pilatch-card rank="5" suit="scissors" up clickable></pilatch-card>
+  <pilatch-card rank="13" suit="paper" clickable></pilatch-card>
+  <pilatch-card rank="12" suit="rock" up></pilatch-card>
+  <pilatch-card rank="14" suit="scissors" known></pilatch-card>
+  <pilatch-card rank="11" suit="paper" up clickable no-transition></pilatch-card>
+  <pilatch-card binary clickable></pilatch-card>
+
+  <h2>Notes</h2>
+  <p>Adding <code>clickable</code> does <em>not</em> make a card flip when clicked. It only changes the pointer when a user hovers over a card.</p>
+  <p>To make a card flip you'll need something to add or remove its <code>up</code> attribute. See the source code of this page for an example.</p>
+
+  <script>
+    Array.prototype.forEach.call(document.querySelectorAll('pilatch-card[clickable]'), card => {
+      card.addEventListener('click', event => {
+        const host = event.target.closest('pilatch-card')
+
+        // Event retargeting
+        event.target = host
+
+        if (host.hasAttribute('up')) {
+          host.removeAttribute('up')
+        } else {
+          host.setAttribute('up', '')
+        }
+      })
+    })
+  </script>
+</body>
+</html>

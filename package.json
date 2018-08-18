@@ -1,0 +1,37 @@
+{
+  "name": "pilatch-card",
+  "version": "1.0.0",
+  "description": "Pilatch card web component that can flip",
+  "main": "pilatch-card.html",
+  "scripts": {
+    "build": "postcss --config postcss.config.js -o pilatch-card.css src/pilatch-card.css",
+    "build/watch": "postcss --watch --config postcss.config.js -o pilatch-card.css src/pilatch-card.css",
+    "start": "browser-sync start -c bs-config.js"
+  },
+  "devDependencies": {
+    "browser-sync": "^2.18.13",
+    "postcss-cli": "^5.0.0",
+    "postcss-css-variables": "^0.8.1",
+    "postcss-filter-rules": "^0.2.2",
+    "postcss-import": "^11.1.0"
+  },
+  "dependencies": {
+    "webcomponentsjsv0": "git://github.com/webcomponents/webcomponentsjs.git#v0",
+    "simple-component-v0": "^1.0.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/Pilatch/pilatch-card.git"
+  },
+  "keywords": [
+    "card",
+    "flip",
+    "Pilatch"
+  ],
+  "author": "Ethan B Martin",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Pilatch/pilatch-card/issues"
+  },
+  "homepage": "https://github.com/Pilatch/pilatch-card#readme"
+}
