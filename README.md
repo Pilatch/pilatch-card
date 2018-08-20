@@ -28,6 +28,10 @@ In your HTML add polyfills, the helper this depends on, the HTML import and the 
 ![known, face-down, Ace of Scissors](readme-images/known-ace-of-scissors.png)
 ![binary Pilatch card, DOWN](readme-images/binary-down.png)
 
+### Unknown
+
+Unknown cards are the simplest, just displaying the card-back. They are created without any HTML attributes.
+
 ### Suit
 
 Pilatch cards (other than binary cards) are grouped into three suits: `rock`, `paper`, and `scissors`. Use the `suit` HTML attribute and provide it one of those three values.
@@ -38,7 +42,7 @@ The suited Pilatch cards can have ranks between `1` and `15`, inclusive. Use the
 
 ### Up
 
-To flip a card over, add or remove its `up` HTML attribute. All ranked, suited Pilatch cards will appear with the same card back, until an `up` attribute is added.
+To flip a card over, add or remove its `up` HTML attribute. All ranked, suited Pilatch cards will appear with the same card back until an `up` attribute is added.
 
 ### Binary
 
@@ -48,19 +52,17 @@ Binary cards say "UP" on one side and "DOWN" on the other. Add the `binary` HTML
 
 To make a card have `cursor: pointer` add the `clickable` HTML element.
 Clicking it won't do anything out-of-the-box.
-Your application will decide how to handle those events, and attach event listeners to `<pilatch-card>` elements.
+Your application must decide how to handle those events, and attach event listeners to `<pilatch-card>` elements.
 
 ### Known
 
-If a player knows what a face-down card is, that add the `known` HTML attribute to make the front-face translucent.
-
-### Unknown
-
-Unknown cards are the simplest, just displaying the card-back. They are created without any HTML attributes.
+If a player knows what a face-down card is, then add the `known` HTML attribute to make the back-face translucent.
 
 ### No Transition
 
 To have cards instantaneously switch between their up and down sides, instead of using CSS transitions, add the `no-transition` HTML attribute. This is especially useful when rearranging `<pilatch-card>` elements in the DOM.
+
+Read more on how that's helpful in [this blog post](https://experiments.pilatch.com/card-animation/) on animating web components with virtual DOM.
 
 ## Demo
 
@@ -70,3 +72,7 @@ For examples, clone this repository then run
     yarn start
 
 ...and navigate to http://localhost:3000
+
+## Future
+
+In the future this may depend of the web components v1 spec instead of v0.
