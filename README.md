@@ -75,4 +75,4 @@ For examples, clone this repository then run
 
 ## Future
 
-In the future this may depend of the web components v1 spec instead of v0.
+In the future this may depend on the web components v1 spec instead of v0.
