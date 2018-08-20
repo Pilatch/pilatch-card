@@ -40,6 +40,7 @@ pilatch-card[clickable] {
   cursor: pointer;
 }
 pilatch-card[known]:not([up]) .pilatch-card_front {
+  -webkit-backface-visibility: visible;
   backface-visibility: visible;
 }
 pilatch-card[known]:not([up]) .pilatch-card_back {
@@ -47,6 +48,7 @@ pilatch-card[known]:not([up]) .pilatch-card_back {
 }
 pilatch-card .pilatch-card_front,
 pilatch-card .pilatch-card_back {
+  -webkit-backface-visibility: hidden;
   backface-visibility: hidden;
   background-image: url(sprite.png);
   background-size: calc(var(--sprite-width) * var(--pilatch-card-scale)) calc(var(--sprite-height) * var(--pilatch-card-scale));

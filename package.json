@@ -1,6 +1,6 @@
 {
   "name": "pilatch-card",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Pilatch card web component that can flip",
   "main": "pilatch-card.html",
   "scripts": {
