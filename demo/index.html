@@ -30,8 +30,9 @@
   <pilatch-card binary clickable></pilatch-card>
 
   <h2>Notes</h2>
+  <p>Try clicking on the cards. Some will flip.</p>
   <p>Adding <code>clickable</code> does <em>not</em> make a card flip when clicked. It only changes the pointer when a user hovers over a card.</p>
-  <p>To make a card flip you'll need something to add or remove its <code>up</code> attribute. See the source code of this page for an example.</p>
+  <p>To make a card flip you'll need some JavaScript to add or remove its <code>up</code> attribute. See the source code of this page for an example.</p>
 
   <script>
     Array.prototype.forEach.call(document.querySelectorAll('pilatch-card[clickable]'), card => {
