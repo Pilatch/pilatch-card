@@ -5,8 +5,6 @@ module.exports = {
   plugins: [
     require('postcss-import'),
     require('postcss-css-variables'),
-    // require('postcss-filter-rules')({
-    //   filter: selector => selector.startsWith(selectorPrefix),
-    // })
+    require('postcss-calc'),
   ],
 }

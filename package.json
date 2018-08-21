@@ -1,6 +1,6 @@
 {
   "name": "pilatch-card",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Pilatch card web component that can flip",
   "main": "pilatch-card.html",
   "scripts": {
@@ -10,14 +10,15 @@
   },
   "devDependencies": {
     "browser-sync": "^2.18.13",
+    "postcss-calc": "^6.0.1",
     "postcss-cli": "^5.0.0",
     "postcss-css-variables": "^0.8.1",
     "postcss-filter-rules": "^0.2.2",
     "postcss-import": "^11.1.0"
   },
   "dependencies": {
-    "webcomponentsjsv0": "git://github.com/webcomponents/webcomponentsjs.git#v0",
-    "simple-component-v0": "^1.0.0"
+    "simple-component-v0": "^1.0.0",
+    "webcomponentsjsv0": "git://github.com/webcomponents/webcomponentsjs.git#v0"
   },
   "repository": {
     "type": "git",

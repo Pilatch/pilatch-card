@@ -9,31 +9,31 @@
 pilatch-card .pilatch-card_container {
   display: inline-block;
   position: relative;
-  height: calc(350px * 1);
-  width: calc(250px * 1);
+  height: 350px;
+  width: 250px;
   /* entire container, keeps perspective */
   perspective: 1000px;
 }
 
 pilatch-card[binary] .pilatch-card_container {
   /* Binary cards are presented rotate ninety degrees, so width and height are swapped. */
-  height: calc(250px * 1);
-  width: calc(350px * 1);
+  height: 250px;
+  width: 350px;
 }
 
 pilatch-card[binary] .pilatch-card_front {
-  background-position-x: calc(calc(-1 * calc(4100px * 1)) + calc(350px * 1));
-  background-position-y: calc(-1 * calc(350px * 1));
+  background-position-x: -3750px;
+  background-position-y: -350px;
 }
 
 pilatch-card[binary] .pilatch-card_back {
-  background-position-x: calc(calc(-1 * calc(4100px * 1)) + calc(350px * 1));
-  background-position-y: calc(calc(-1 * calc(350px * 1)) - calc(250px * 1));
+  background-position-x: -3750px;
+  background-position-y: -600px;
 }
 
 pilatch-card[nothing] .pilatch-card_container {
-  border: calc(2px * 1) dashed gray;
-  border-radius: calc(6px * 1);
+  border: 2px dashed gray;
+  border-radius: 6px;
 }
 
 pilatch-card[nothing] .pilatch-card_front, pilatch-card[nothing] .pilatch-card_back {
@@ -57,7 +57,7 @@ pilatch-card .pilatch-card_front {
   -webkit-backface-visibility: hidden;
   backface-visibility: hidden;
   background-image: url(sprite.png);
-  background-size: calc(4100px * 1) calc(1050px * 1);
+  background-size: 4100px 1050px;
   position: absolute;
   height: 100%;
   width: 100%;
@@ -67,7 +67,7 @@ pilatch-card .pilatch-card_back {
   -webkit-backface-visibility: hidden;
   backface-visibility: hidden;
   background-image: url(sprite.png);
-  background-size: calc(4100px * 1) calc(1050px * 1);
+  background-size: 4100px 1050px;
   position: absolute;
   height: 100%;
   width: 100%;
@@ -84,7 +84,7 @@ pilatch-card:not([no-transition]) .pilatch-card_back {
 }
 
 pilatch-card .pilatch-card_back {
-  background-position-x: calc(calc(-1 * calc(4100px * 1)) + calc(350px * 1));
+  background-position-x: -3750px;
   /* for firefox 31 */
   transform: rotateY(0deg);
   z-index: 2;
@@ -95,37 +95,37 @@ pilatch-card .pilatch-card_front {
   transform: rotateY(-180deg);
 }
 
-pilatch-card[suit='rock'] .pilatch-card_front {background-position-y: calc(-1 * calc(350px * 1));}
+pilatch-card[suit='rock'] .pilatch-card_front {background-position-y: -350px;}
 
-pilatch-card[suit='scissors'] .pilatch-card_front {background-position-y: calc(2 * calc(-1 * calc(350px * 1)));}
+pilatch-card[suit='scissors'] .pilatch-card_front {background-position-y: -700px;}
 
-pilatch-card[rank='2'] .pilatch-card_front {background-position-x: calc(-1 * calc(250px * 1));}
+pilatch-card[rank='2'] .pilatch-card_front {background-position-x: -250px;}
 
-pilatch-card[rank='3'] .pilatch-card_front {background-position-x: calc(-2 * calc(250px * 1));}
+pilatch-card[rank='3'] .pilatch-card_front {background-position-x: -500px;}
 
-pilatch-card[rank='4'] .pilatch-card_front {background-position-x: calc(-3 * calc(250px * 1));}
+pilatch-card[rank='4'] .pilatch-card_front {background-position-x: -750px;}
 
-pilatch-card[rank='5'] .pilatch-card_front {background-position-x: calc(-4 * calc(250px * 1));}
+pilatch-card[rank='5'] .pilatch-card_front {background-position-x: -1000px;}
 
-pilatch-card[rank='6'] .pilatch-card_front {background-position-x: calc(-5 * calc(250px * 1));}
+pilatch-card[rank='6'] .pilatch-card_front {background-position-x: -1250px;}
 
-pilatch-card[rank='7'] .pilatch-card_front {background-position-x: calc(-6 * calc(250px * 1));}
+pilatch-card[rank='7'] .pilatch-card_front {background-position-x: -1500px;}
 
-pilatch-card[rank='8'] .pilatch-card_front {background-position-x: calc(-7 * calc(250px * 1));}
+pilatch-card[rank='8'] .pilatch-card_front {background-position-x: -1750px;}
 
-pilatch-card[rank='9'] .pilatch-card_front {background-position-x: calc(-8 * calc(250px * 1));}
+pilatch-card[rank='9'] .pilatch-card_front {background-position-x: -2000px;}
 
-pilatch-card[rank='10'] .pilatch-card_front {background-position-x: calc(-9 * calc(250px * 1));}
+pilatch-card[rank='10'] .pilatch-card_front {background-position-x: -2250px;}
 
-pilatch-card[rank='11'] .pilatch-card_front {background-position-x: calc(-10 * calc(250px * 1));}
+pilatch-card[rank='11'] .pilatch-card_front {background-position-x: -2500px;}
 
-pilatch-card[rank='12'] .pilatch-card_front {background-position-x: calc(-11 * calc(250px * 1));}
+pilatch-card[rank='12'] .pilatch-card_front {background-position-x: -2750px;}
 
-pilatch-card[rank='13'] .pilatch-card_front {background-position-x: calc(-12 * calc(250px * 1));}
+pilatch-card[rank='13'] .pilatch-card_front {background-position-x: -3000px;}
 
-pilatch-card[rank='14'] .pilatch-card_front {background-position-x: calc(-13 * calc(250px * 1));}
+pilatch-card[rank='14'] .pilatch-card_front {background-position-x: -3250px;}
 
-pilatch-card[rank='15'] .pilatch-card_front {background-position-x: calc(-14 * calc(250px * 1));}
+pilatch-card[rank='15'] .pilatch-card_front {background-position-x: -3500px;}
 
 pilatch-card[up] .pilatch-card_back {
   transform: rotateY(180deg);
