@@ -1,0 +1,30 @@
+{
+  "components": [
+    {
+      "tag": "pilatch-card",
+      "dependencies": [],
+      "componentClass": "PilatchCard",
+      "componentPath": "pilatch-card.js",
+      "styles": {
+        "$": {
+          "stylePaths": [
+            "pilatch-card.css"
+          ]
+        }
+      }
+    }
+  ],
+  "collections": [],
+  "compiler": {
+    "name": "@stencil/core",
+    "version": "0.16.2",
+    "typescriptVersion": "3.2.2"
+  },
+  "bundles": [
+    {
+      "components": [
+        "pilatch-card"
+      ]
+    }
+  ]
+}

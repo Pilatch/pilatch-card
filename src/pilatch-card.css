@@ -50,7 +50,7 @@ pilatch-card .pilatch-card_front,
 pilatch-card .pilatch-card_back {
   -webkit-backface-visibility: hidden;
   backface-visibility: hidden;
-  background-image: url(sprite.png);
+  background-image: url('assets/sprite.png');
   background-size: calc(var(--sprite-width) * var(--pilatch-card-scale)) calc(var(--sprite-height) * var(--pilatch-card-scale));
   position: absolute;
   height: 100%;

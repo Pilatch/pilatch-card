@@ -9,12 +9,9 @@ From your command line
     yarn add pilatch-card
     yarn install --flat
 
-In your HTML add polyfills, the helper this depends on, the HTML import and the stylesheet.
+Add the script for the `pilatch-card` custom element.
 
-    <script src="node_modules/webcomponentsjsv0/webcomponents-lite.js"></script>
-    <script src="node_modules/simple-component-v0/index.js"></script>
-    <link rel="import" href="node_modules/pilatch-card.html">
-    <link rel="stylesheet" type="text/css" href="node_modules/pilatch-card.css">
+    <script src="node_modules/pilatch-card/dist/pilatch-card.js"></script>
 
 ## Usage
 
@@ -75,4 +72,4 @@ For examples, clone this repository then run
 
 ## Future
 
-In the future this may depend on the web components v1 spec instead of v0. Pilatch cards may eventually use Shadow DOM when browser support/usage allows.
+Pilatch cards may eventually use Shadow DOM when browser support/usage allows.
