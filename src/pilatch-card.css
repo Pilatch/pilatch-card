@@ -1,6 +1,15 @@
-@import 'variables.css';
-
 :root {
+  --pilatch-card-scale: 1;
+  --pilatch-card-height: 350px;
+  --pilatch-card-width: 250px;
+  /*
+    TODO calculate scaled card height and width based on viewport width
+    TODO calculate the pilatch-card-scale based on the relationship between the card height and scaled height,
+    if possible, as pilatch-card.css uses that in a few places.
+  */
+  --scaled-card-height: calc(var(--pilatch-card-height) * var(--pilatch-card-scale));
+  --scaled-card-width: calc(var(--pilatch-card-width) * var(--pilatch-card-scale));
+
   --sprite-width: 4100px;
   --sprite-height: 1050px;
   --scaled-background-height: calc(var(--sprite-height) * var(--pilatch-card-scale));
@@ -50,7 +59,7 @@ pilatch-card .pilatch-card_front,
 pilatch-card .pilatch-card_back {
   -webkit-backface-visibility: hidden;
   backface-visibility: hidden;
-  background-image: url(sprite.png);
+  background-image: url(https://pilatch.com/sites/default/files/pilatch-card/sprite.png);
   background-size: calc(var(--sprite-width) * var(--pilatch-card-scale)) calc(var(--sprite-height) * var(--pilatch-card-scale));
   position: absolute;
   height: 100%;
