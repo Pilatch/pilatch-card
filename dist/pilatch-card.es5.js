@@ -26,17 +26,13 @@ function (_HTMLElement) {
   _createClass(PilatchCard, [{
     key: "connectedCallback",
     value: function connectedCallback() {
-      this.innerHTML = "\n  <div class=\"pilatch-card_container\">\n    <div class=\"pilatch-card_back\"></div>\n    <div class=\"pilatch-card_front\"></div>\n  </div>\n";
+      this.innerHTML = "<div class=\"pilatch-card_container\">\n  <div class=\"pilatch-card_back\"></div>\n  <div class=\"pilatch-card_front\"></div>\n</div>";
     }
   }]);
 
   return PilatchCard;
 }(HTMLElement);
 
-try {
+window.addEventListener('WebComponentsReady', () => {
   customElements.define('pilatch-card', PilatchCard);
-} catch (_) {
-  window.addEventListener('WebComponentsReady', () => {
-    customElements.define('pilatch-card', PilatchCard);
-  });
-}
+});
