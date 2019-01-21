@@ -1,25 +1,24 @@
 {
   "name": "pilatch-card",
-  "version": "1.0.2",
+  "version": "2.0.0",
   "description": "Pilatch card web component that can flip",
   "main": "pilatch-card.html",
   "scripts": {
-    "build": "postcss --config postcss.config.js -o pilatch-card.css src/pilatch-card.css",
-    "build/watch": "postcss --watch --config postcss.config.js -o pilatch-card.css src/pilatch-card.css",
+    "build": "postcss --config postcss.config.js -o src/pilatch-card.css src/pre/pilatch-card.pre.css && easy-element build src",
     "start": "browser-sync start -c bs-config.js"
   },
   "devDependencies": {
+    "@webcomponents/webcomponentsjs": "^2.2.4",
     "browser-sync": "^2.18.13",
+    "easy-element": "git+ssh://git@github.com:Pilatch/simple-custom-element.git",
     "postcss-calc": "^6.0.1",
     "postcss-cli": "^5.0.0",
     "postcss-css-variables": "^0.8.1",
     "postcss-filter-rules": "^0.2.2",
-    "postcss-import": "^11.1.0"
+    "postcss-import": "^11.1.0",
+    "postcss-url": "^8.0.0"
   },
-  "dependencies": {
-    "simple-component-v0": "^1.0.0",
-    "webcomponentsjsv0": "git://github.com/webcomponents/webcomponentsjs.git#v0"
-  },
+  "dependencies": {},
   "repository": {
     "type": "git",
     "url": "git+ssh://git@github.com/Pilatch/pilatch-card.git"
@@ -34,5 +33,8 @@
   "bugs": {
     "url": "https://github.com/Pilatch/pilatch-card/issues"
   },
-  "homepage": "https://github.com/Pilatch/pilatch-card#readme"
+  "homepage": "https://github.com/Pilatch/pilatch-card#readme",
+  "peerDependencies": {
+    "@webcomponents/webcomponentsjs": "^2.2.4"
+  }
 }

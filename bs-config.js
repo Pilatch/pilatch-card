@@ -1,7 +1,7 @@
 module.exports = {
   server: {
     baseDir: './',
-    index: 'demo/index.html',
+    directory: true,
   },
   open: false,
   notify: false
