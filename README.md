@@ -6,22 +6,27 @@ A simple web component for Pilatch playing cards
 
 From your command line
 
-    yarn add pilatch-card
-    yarn install --flat
+```bash
+yarn add pilatch-card
+yarn install --flat
+```
 
 In your HTML add polyfills, the helper this depends on, the HTML import and the stylesheet.
 
-    <script src="node_modules/webcomponentsjsv0/webcomponents-lite.js"></script>
-    <script src="node_modules/simple-component-v0/index.js"></script>
-    <link rel="import" href="node_modules/pilatch-card.html">
-    <link rel="stylesheet" type="text/css" href="node_modules/pilatch-card.css">
+```html
+<script src="/node_modules/@webcomponents/webcomponentsjs/custom-elements-es5-adapter.js"></script>
+<script src="/node_modules/@webcomponents/webcomponentsjs/webcomponents-loader.js"></script>
+<script src="/dist/pilatch-card.es5.js"></script>
+```
 
 ## Usage
 
-    <pilatch-card></pilatch-card>
-    <pilatch-card rank="12" suit="rock" up></pilatch-card>
-    <pilatch-card rank="14" suit="scissors" known></pilatch-card>
-    <pilatch-card binary></pilatch-card>
+```html
+<pilatch-card></pilatch-card>
+<pilatch-card rank="12" suit="rock" up></pilatch-card>
+<pilatch-card rank="14" suit="scissors" known></pilatch-card>
+<pilatch-card binary></pilatch-card>
+```
 
 ![black-backed Pilatch card, face-down](readme-images/card-back.png)
 ![Queen of rock Pilatch card, face-up](readme-images/queen-of-rock.png)
@@ -68,8 +73,10 @@ Read more on how that's helpful in [this blog post](https://experiments.pilatch.
 
 For examples, clone this repository then run
 
-    yarn install
-    yarn start
+```bash
+yarn install
+yarn start
+```
 
 ...and navigate to http://localhost:3000
 
