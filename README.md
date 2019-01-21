@@ -16,7 +16,7 @@ In your HTML add polyfills, the helper this depends on, the HTML import and the 
 ```html
 <script src="/node_modules/@webcomponents/webcomponentsjs/custom-elements-es5-adapter.js"></script>
 <script src="/node_modules/@webcomponents/webcomponentsjs/webcomponents-loader.js"></script>
-<script src="/dist/pilatch-card.es5.js"></script>
+<script src="/node_modules/pilatch-card/dist/pilatch-card.es5.js"></script>
 ```
 
 ## Usage
