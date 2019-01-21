@@ -5,8 +5,6 @@
   "main": "pilatch-card.html",
   "scripts": {
     "build": "postcss --config postcss.config.js -o src/pilatch-card.css src/pre/pilatch-card.pre.css && easy-element build src",
-    "xxx_build": "easy-element src/pilatch-card.html && postcss --config postcss.config.js -o dist/pilatch-card.css src/pre/pilatch-card.pre.css",
-    "xxx_build/watch": "postcss --watch --config postcss.config.js -o pilatch-card.css src/pilatch-card.css",
     "start": "browser-sync start -c bs-config.js"
   },
   "devDependencies": {
@@ -16,7 +14,8 @@
     "postcss-cli": "^5.0.0",
     "postcss-css-variables": "^0.8.1",
     "postcss-filter-rules": "^0.2.2",
-    "postcss-import": "^11.1.0"
+    "postcss-import": "^11.1.0",
+    "postcss-url": "^8.0.0"
   },
   "dependencies": {},
   "repository": {

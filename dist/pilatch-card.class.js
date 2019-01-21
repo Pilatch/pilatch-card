@@ -65,7 +65,7 @@ class PilatchCard extends HTMLElement {
 :host .pilatch-card_front {
   -webkit-backface-visibility: hidden;
   backface-visibility: hidden;
-  background-image: url(assets/sprite.png);
+  background-image: url(/node_modules/pilatch-card/assets/sprite.png);
   background-size: 4100px 1050px;
   position: absolute;
   height: 100%;
@@ -75,7 +75,7 @@ class PilatchCard extends HTMLElement {
 :host .pilatch-card_back {
   -webkit-backface-visibility: hidden;
   backface-visibility: hidden;
-  background-image: url(assets/sprite.png);
+  background-image: url(/node_modules/pilatch-card/assets/sprite.png);
   background-size: 4100px 1050px;
   position: absolute;
   height: 100%;
