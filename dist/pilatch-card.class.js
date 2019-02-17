@@ -1,9 +1,9 @@
 class PilatchCard extends HTMLElement {
   connectedCallback() {
-    let shadowRoot = this.attachShadow({
+    this.attachShadow({
       mode: 'open'
     });
-    shadowRoot.innerHTML = `<div class="pilatch-card_container">
+    this.shadowRoot.innerHTML = `<div class="pilatch-card_container">
   <div class="pilatch-card_back"></div>
   <div class="pilatch-card_front"></div>
 </div><style>:root {

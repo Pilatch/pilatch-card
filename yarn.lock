@@ -1269,19 +1269,21 @@ dir-glob@2.0.0:
     arrify "^1.0.1"
     path-type "^3.0.0"
 
-"easy-element@git+ssh://git@github.com:Pilatch/simple-custom-element.git":
-  version "1.0.0"
-  resolved "git+ssh://git@github.com:Pilatch/simple-custom-element.git#b0a639032fef3ebe59df76f69a284ed5f76bbc5f"
+easy-element@^1.1.1:
+  version "1.1.1"
+  resolved "https://registry.yarnpkg.com/easy-element/-/easy-element-1.1.1.tgz#fa52dcd4e96f272038bad4ebe4875fe6747184df"
   dependencies:
     "@babel/cli" "^7.2.3"
     "@babel/core" "^7.2.2"
     "@babel/plugin-transform-classes" "7.0.0-beta.35"
     "@babel/plugin-transform-template-literals" "^7.2.0"
     "@babel/preset-env" "^7.2.3"
+    chalk "^2.4.2"
     chokidar "^2.0.4"
     css "^2.2.4"
     mkdirp "^0.5.1"
     node-html-parser "^1.1.11"
+    postcss "^7.0.14"
     postcss-selector-parser "^5.0.0"
     to-pascal-case "^1.0.0"
     yargs "^12.0.5"
@@ -2826,6 +2828,14 @@ postcss@^6.0.1, postcss@^6.0.8:
     chalk "^2.4.1"
     source-map "^0.6.1"
     supports-color "^5.4.0"
+
+postcss@^7.0.14:
+  version "7.0.14"
+  resolved "https://registry.yarnpkg.com/postcss/-/postcss-7.0.14.tgz#4527ed6b1ca0d82c53ce5ec1a2041c2346bbd6e5"
+  dependencies:
+    chalk "^2.4.2"
+    source-map "^0.6.1"
+    supports-color "^6.1.0"
 
 postcss@^7.0.2, postcss@^7.0.5:
   version "7.0.13"
