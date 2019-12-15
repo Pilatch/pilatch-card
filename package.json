@@ -1,16 +1,17 @@
 {
   "name": "pilatch-card",
-  "version": "2.0.4",
+  "version": "2.0.5",
   "description": "Pilatch card web component that can flip",
   "main": "dist/pilatch-card.class.js",
   "scripts": {
-    "build": "easy-element build src --preprocessor postcss",
-    "start": "browser-sync start -c bs-config.js"
+    "build": "easy-element build src --preprocessor postcss --minify",
+    "start": "browser-sync start -c bs-config.js",
+    "watch": "easy-element watch src --preprocessor postcss"
   },
   "devDependencies": {
     "@webcomponents/webcomponentsjs": "^2.2.4",
     "browser-sync": "^2.18.13",
-    "easy-element": "^1.1.1",
+    "easy-element": "^1.8.3",
     "postcss-calc": "^6.0.1",
     "postcss-cli": "^5.0.0",
     "postcss-css-variables": "^0.8.1",

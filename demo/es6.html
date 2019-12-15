@@ -37,6 +37,10 @@
       card.addEventListener('click', function(event) {
         var host = event.target.closest('pilatch-card')
 
+        if (!host) {
+          host = event.target.getRootNode().host
+        }
+
         // Event retargeting
         event.target = host
 
